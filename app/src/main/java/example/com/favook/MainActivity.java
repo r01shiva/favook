@@ -7,6 +7,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -34,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
     private LoginButton loginButton;
     FirebaseAuth.AuthStateListener authStateListener;
     AccessTokenTracker accessTokenTracker;
+    Button fb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +50,13 @@ public class MainActivity extends AppCompatActivity {
         loginButton = (LoginButton) findViewById(R.id.login);
         loginButton.setReadPermissions("email","public_profile");
         mCallbackManager = CallbackManager.Factory.create();
+        fb = findViewById(R.id.fb);
+        fb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                loginButton.performClick();
+            }
+        });
         loginButton.registerCallback(mCallbackManager, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {
