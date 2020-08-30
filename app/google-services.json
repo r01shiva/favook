@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1010575668356",
+    "firebase_url": "https://favook-32379.firebaseio.com",
+    "project_id": "favook-32379",
+    "storage_bucket": "favook-32379.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1010575668356:android:bb97329edb220436af3ed1",
+        "android_client_info": {
+          "package_name": "example.com.favook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1010575668356-p4vr1lqmum0mfpbm7g2g2e0trt6kl516.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBst9Wa6ACuEYlJO8SMrChNhXslYgov8_g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1010575668356-p4vr1lqmum0mfpbm7g2g2e0trt6kl516.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
